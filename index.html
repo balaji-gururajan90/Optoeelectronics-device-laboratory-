@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Optoelectronics Laboratory at Yuan Ze University - Advancing transparent solar cells, wide band gap semiconductors, and 2D materials">
+  <meta name="keywords"
+    content="thin-film solar cells, transparent photovoltaics, wide band gap semiconductors, 2D materials, computational modeling, semiconductor research, Taiwan research lab, Yuan Ze University">
+  <meta name="author" content="Dr. Balaji Gururajan">
+  <title>Optoelectronics Device Laboratory | Yuan Ze University</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/components.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container container-wide">
+      <div class="navbar-content">
+        <a href="index.html" class="navbar-logo">
+          <img src="assets/images/yzu-logo.png" alt="YZU Logo" class="navbar-logo-img">
+          <div class="logo-text">
+            <span>Opto</span>electronics Device Lab
+          </div>
+        </a>
+
+        <ul class="navbar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="lab.html">Laboratory</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="partnerships.html">Partnerships</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button class="navbar-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <canvas id="hero-waves" class="hero-background"></canvas>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title animate-fade-in-down" style="max-width: 100%; white-space: nowrap;">
+        Optoelectronics Device Laboratory
+      </h1>
+      <p class="hero-subtitle animate-fade-in-up">
+        Yuan Ze University, Taiwan
+      </p>
+
+      <div class="hero-quote animate-fade-in"
+        style="margin-top: 3rem; display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+        <img src="assets/images/heisenberg.jpg" alt="Werner Heisenberg"
+          style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid rgba(0, 255, 255, 0.5); object-fit: cover;">
+        <blockquote
+          style="font-size: 1.25rem; font-style: italic; color: var(--color-grey-300); max-width: 800px; line-height: 1.6;">
+          "The first gulp from the glass of natural sciences will make you an atheist, but at the bottom of the glass
+          God is waiting for you."
+        </blockquote>
+        <cite style="color: var(--color-primary-400); font-style: normal; font-weight: 500;">— Werner Heisenberg</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title">Our Focus</h2>
+        <p class="section-description">
+          Advancing the frontiers of optoelectronic devices through innovative materials, fabrication techniques, and
+          computational modeling.
+        </p>
+      </div>
+
+      <div class="grid grid-4">
+        <div class="card" data-reveal="up">
+          <div class="card-icon">☀️</div>
+          <h3 class="card-title">Thin-Film & Transparent Solar Cells</h3>
+          <p class="card-description">
+            Developing novel materials and device architectures for photovoltaic applications, focusing on transparent
+            and semi-transparent solar cells with enhanced efficiency and stability.
+          </p>
+        </div>
+
+        <div class="card" data-reveal="up">
+          <div class="card-icon">💎</div>
+          <h3 class="card-title">Wide Band Gap Semiconductors</h3>
+          <p class="card-description">
+            Investigating oxide semiconductors and wide band gap materials for UV and X-ray photodetectors with
+            applications in sensing and imaging.
+          </p>
+        </div>
+
+        <div class="card" data-reveal="up">
+          <div class="card-icon">🔬</div>
+          <h3 class="card-title">2D Materials</h3>
+          <p class="card-description">
+            Exploring transition metal dichalcogenides and heterostructures for next-generation optoelectronic devices
+            with enhanced quantum efficiency.
+          </p>
+        </div>
+
+        <div class="card" data-reveal="up">
+          <div class="card-icon">💻</div>
+          <h3 class="card-title">Computation</h3>
+          <p class="card-description">
+            Utilizing COMSOL and SCAPS simulation tools to optimize device architectures and predict performance
+            characteristics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Statistics Section -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-4">
+        <div class="text-center" data-animate>
+          <h3 class="gradient-text" style="font-size: var(--font-size-5xl); margin-bottom: var(--spacing-sm);">27+</h3>
+          <p style="color: var(--color-grey-600); font-weight: var(--font-weight-medium);">Publications</p>
+        </div>
+
+        <div class="text-center" data-animate>
+          <h3 class="gradient-text" style="font-size: var(--font-size-5xl); margin-bottom: var(--spacing-sm);"
+            data-counter="3">0</h3>
+          <p style="color: var(--color-grey-600); font-weight: var(--font-weight-medium);">Active Projects</p>
+        </div>
+
+        <div class="text-center" data-animate>
+          <h3 class="gradient-text" style="font-size: var(--font-size-5xl); margin-bottom: var(--spacing-sm);"
+            data-counter="8">0</h3>
+          <p style="color: var(--color-grey-600); font-weight: var(--font-weight-medium);">Team Members</p>
+        </div>
+
+        <div class="text-center" data-animate>
+          <h3 class="gradient-text" style="font-size: var(--font-size-5xl); margin-bottom: var(--spacing-sm);">~10</h3>
+          <p style="color: var(--color-grey-600); font-weight: var(--font-weight-medium);">International Partners</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="section" style="background: var(--gradient-dark); color: var(--color-white);">
+    <div class="container text-center">
+      <h2 style="color: var(--color-white); font-size: var(--font-size-4xl); margin-bottom: var(--spacing-lg);"
+        data-animate>
+        Join Our Research Community
+      </h2>
+      <p style="font-size: var(--font-size-lg); color: var(--color-grey-300); margin-bottom: var(--spacing-xl); max-width: 700px; margin-left: auto; margin-right: auto;"
+        data-animate>
+        We welcome collaborations with researchers, students, and industry partners interested in optoelectronics and
+        thin-film technologies.
+      </p>
+      <p style="font-size: var(--font-size-base); color: var(--color-grey-400); margin-bottom: var(--spacing-2xl); max-width: 600px; margin-left: auto; margin-right: auto;"
+        data-animate>
+        Fill out our interest form with your details including name, university, degree pursuing, research interests,
+        and any comments or questions.
+      </p>
+      <div class="btn-group" data-animate>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMuTMxryZGhe0kyoTJUMuIafQLkQF6p4Uwn6muabziMx9HvQ/viewform?usp=publish-editor"
+          target="_blank" class="btn btn-primary">Submit Interest Form</a>
+        <a href="contact.html" class="btn btn-secondary">Contact Us Directly</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Optoelectronics Device Laboratory</h4>
+          <p>Optoelectronics Device Laboratory</p>
+          <p>Department of Electrical Engineering<br>Yuan Ze University<br>Taoyuan City, Taiwan</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Lab</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="lab.html">Laboratory Facilities</a></li>
+            <li><a href="projects.html">Projects & Funding</a></li>
+            <li><a href="partnerships.html">Partnerships</a></li>
+            <li><a href="news.html">News & Events</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="https://scholar.google.com/citations?user=LDisxicAAAAJ&hl=en" target="_blank">Google
+                Scholar</a></li>
+            <li><a href="https://www.ei.yzu.edu.tw/teacher_list/all" target="_blank">University Profile</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Optoelectronics Device Laboratory, Yuan Ze University. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+  <!-- <script type="module" src="js/sputtering_animation.js"></script> -->
+  <script type="module" src="js/animations.js"></script>
+  <script type="module" src="js/waves.js"></script>
+</body>
+
+</html>

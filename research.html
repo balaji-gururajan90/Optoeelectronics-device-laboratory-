@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Research themes at Optoelectronics Device Laboratory - Thin-film solar cells, photodetectors, 2D materials, and device modeling">
+    <meta name="keywords"
+        content="CZTS solar cells, transparent photovoltaics, oxide photodetectors, 2D materials, SCAPS modeling, COMSOL simulation, Optoelectronics Device Lab">
+    <title>Research | Optoelectronics Device Laboratory</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container container-wide">
+            <div class="navbar-content">
+                <a href="index.html" class="navbar-logo">
+                    <img src="assets/images/yzu-logo.png" alt="YZU Logo" class="navbar-logo-img">
+                    <div class="logo-text">
+                        <span>Opto</span>electronics Device Lab
+                    </div>
+                </a>
+
+                <ul class="navbar-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="lab.html">Laboratory</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="partnerships.html">Partnerships</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <button class="navbar-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 50vh;">
+
+        <canvas id="hero-background" class="hero-background"></canvas>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Research Themes</h1>
+            <p class="hero-subtitle">Exploring the Frontiers of Thin-Film Optoelectronics</p>
+        </div>
+    </section>
+
+
+
+    <!-- Solar Cells -->
+    <section id="solar-cells" class="section"
+        style="padding-top: var(--spacing-xl); padding-bottom: var(--spacing-xl);">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-label">Theme 01</span>
+                <h2 class="section-title">Thin-Film & Transparent Solar Cells</h2>
+                <p class="section-description">
+                    Developing next-generation photovoltaic devices with enhanced efficiency and transparency for
+                    building-integrated applications
+                </p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card" data-reveal="left">
+                    <h3 class="card-title">Chalcogenide Solar Cells</h3>
+                    <p class="card-description">
+                        RF magnetron sputtering of CZTS, BiS, and CuBiS absorber layers for earth-abundant, non-toxic
+                        solar cells. Focused optimization of material composition, crystallinity, and defect density for
+                        enhanced photovoltaic performance.
+                    </p>
+                    <ul style="margin-top: var(--spacing-md); color: var(--color-grey-600);">
+                        <li>CZTS, BiS, CuBiS absorber optimization</li>
+                        <li>Non-toxic material development</li>
+                        <li>Sputtering process control</li>
+                        <li>Defect engineering</li>
+                    </ul>
+                </div>
+
+                <div class="card" data-reveal="right">
+                    <h3 class="card-title">Transparent Photovoltaics</h3>
+                    <p class="card-description">
+                        Design and fabrication of semi-transparent and fully transparent solar cells for window
+                        applications, greenhouses, and building-integrated photovoltaics (BIPV). Focus on balancing
+                        power conversion efficiency with visible light transmission.
+                    </p>
+                    <ul style="margin-top: var(--spacing-md); color: var(--color-grey-600);">
+                        <li>Transparent conductive oxides (TCO)</li>
+                        <li>Ultra-thin absorber layers</li>
+                        <li>Wavelength-selective absorption</li>
+                        <li>Aesthetic color tuning</li>
+                    </ul>
+                </div>
+
+                <div class="card" data-reveal="left">
+                    <h3 class="card-title">Buffer Layer Engineering</h3>
+                    <p class="card-description">
+                        Investigation of alternative buffer layers including ZnOS, ZnO, and AZO to replace toxic CdS.
+                        Development of band alignment strategies to minimize interface recombination losses.
+                    </p>
+                </div>
+
+                <div class="card" data-reveal="right">
+                    <h3 class="card-title">Device Architecture Optimization</h3>
+                    <p class="card-description">
+                        Systematic study of layer configurations, interface engineering, and contact optimization to
+                        maximize open-circuit voltage, short-circuit current, and fill factor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photodetectors -->
+    <section id="photodetectors" class="section"
+        style="background: var(--color-grey-100); padding-top: var(--spacing-xl); padding-bottom: var(--spacing-xl);">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-label">Theme 02</span>
+                <h2 class="section-title">Oxide-Semiconductor Photodetectors</h2>
+                <p class="section-description">
+                    Advanced UV and X-ray detection using wide-bandgap oxide semiconductors
+                </p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card" data-reveal="left">
+                    <h3 class="card-title">β-Ga₂O₃ Photodetectors</h3>
+                    <p class="card-description">
+                        Optimization of beta-phase gallium oxide thin films for solar-blind UV detection. RF sputtering
+                        parameter studies including oxygen partial pressure, substrate temperature, and post-deposition
+                        annealing effects.
+                    </p>
+                    <ul style="margin-top: var(--spacing-md); color: var(--color-grey-600);">
+                        <li>High responsivity (>10 A/W)</li>
+                        <li>Fast response time (&lt;1 ms)</li>
+                        <li>Solar-blind detection (λ &lt; 280 nm)</li>
+                        <li>Low dark current</li>
+                    </ul>
+                </div>
+
+                <div class="card" data-reveal="right">
+                    <h3 class="card-title">Delafossite UV Photodetectors</h3>
+                    <p class="card-description">
+                        Exploration of delafossite materials (e.g., CuAlO₂) for efficient UV photodetection.
+                        Focus on wide-bandgap p-type oxides to create high-performance pn-heterojunction devices
+                        with excellent selectivity.
+                    </p>
+                </div>
+
+                <div class="card" data-reveal="left">
+                    <h3 class="card-title">X-ray Photodetectors</h3>
+                    <p class="card-description">
+                        Development of thin-film X-ray detectors for medical imaging and security applications using
+                        high-Z materials and optimized device structures for enhanced X-ray absorption and charge
+                        collection efficiency.
+                    </p>
+                </div>
+
+                <div class="card" data-reveal="right">
+                    <h3 class="card-title">Material Characterization</h3>
+                    <p class="card-description">
+                        Comprehensive optical, electrical, and structural characterization including UV-Vis
+                        spectroscopy, Hall effect measurements, XRD, SEM, and photoluminescence studies.
+                    </p>
+                </div>
+
+                <div class="card" data-reveal="left">
+                    <h3 class="card-title">Device Performance Metrics</h3>
+                    <p class="card-description">
+                        Systematic evaluation of responsivity, detectivity, quantum efficiency, response time, and
+                        spectral selectivity under various operating conditions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2D Materials -->
+    <section id="2d-materials" class="section"
+        style="padding-top: var(--spacing-xl); padding-bottom: var(--spacing-xl);">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-label">Theme 03</span>
+                <h2 class="section-title">2D Materials & Heterostructures</h2>
+                <p class="section-description">
+                    Exploring transition metal dichalcogenides for next-generation optoelectronics
+                </p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card" data-reveal="left">
+                    <h3 class="card-title">WS₂–MoS₂ Heterostructures</h3>
+                    <p class="card-description">
+                        Fabrication and characterization of type-II heterostructures combining tungsten disulfide and
+                        molybdenum disulfide for enhanced charge separation and photocurrent generation.
+                    </p>
+                </div>
+
+                <div class="card" data-reveal="right">
+                    <h3 class="card-title">Optoelectronic Properties</h3>
+                    <p class="card-description">
+                        Investigation of bandgap engineering, exciton dynamics, and quantum efficiency in 2D
+                        material-based photodetectors and photovoltaic devices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Device Modeling -->
+    <section id="modeling" class="section"
+        style="background: var(--color-grey-100); padding-top: var(--spacing-xl); padding-bottom: var(--spacing-xl);">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-label">Theme 04</span>
+                <h2 class="section-title">Computational Device Modeling</h2>
+                <p class="section-description">
+                    Numerical simulation and optimization of optoelectronic devices
+                </p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card" data-reveal="left">
+                    <h3 class="card-title">SCAPS-1D Simulation</h3>
+                    <p class="card-description">
+                        Solar cell capacitance simulator for one-dimensional device modeling. Systematic analysis of
+                        layer thickness, doping concentration, defect density, and interface properties on device
+                        performance.
+                    </p>
+                    <ul style="margin-top: var(--spacing-md); color: var(--color-grey-600);">
+                        <li>J-V characteristic prediction</li>
+                        <li>Quantum efficiency calculations</li>
+                        <li>Defect state analysis</li>
+                        <li>Interface recombination studies</li>
+                    </ul>
+                </div>
+
+                <div class="card" data-reveal="right">
+                    <h3 class="card-title">COMSOL Multiphysics</h3>
+                    <p class="card-description">
+                        Finite element analysis for complex device geometries and multi-physics coupling. Optical,
+                        electrical, and thermal simulations for comprehensive device understanding.
+                    </p>
+                    <ul style="margin-top: var(--spacing-md); color: var(--color-grey-600);">
+                        <li>3D device modeling</li>
+                        <li>Optical field distribution</li>
+                        <li>Carrier transport simulation</li>
+                        <li>Thermal management analysis</li>
+                    </ul>
+                </div>
+
+                <div class="card" data-reveal="left">
+                    <h3 class="card-title">Novel Buffer Layer Screening</h3>
+                    <p class="card-description">
+                        Computational screening of alternative buffer materials (Zn-based, Sb-based compounds) for CZTS
+                        and other chalcogenide solar cells to identify optimal band alignment and minimize interface
+                        recombination.
+                    </p>
+                </div>
+
+                <div class="card" data-reveal="right">
+                    <h3 class="card-title">Performance Optimization</h3>
+                    <p class="card-description">
+                        Parametric studies and sensitivity analysis to identify critical parameters and guide
+                        experimental efforts toward maximum efficiency and stability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Optoelectronics Device Lab</h4>
+                    <p>Optoelectronics Device Laboratory</p>
+                    <p>Department of Electrical Engineering<br>Yuan Ze University<br>Taoyuan City, Taiwan</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Lab</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="lab.html">Laboratory Facilities</a></li>
+                        <li><a href="projects.html">Projects & Funding</a></li>
+                        <li><a href="partnerships.html">Partnerships</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="https://scholar.google.com" target="_blank">Google Scholar</a></li>
+                        <li><a href="https://www.ei.yzu.edu.tw/teacher_list/all" target="_blank">University Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Optoelectronics Device Laboratory, Yuan Ze University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/background.js"></script>
+    <script type="module" src="js/animations.js"></script>
+    </body>
+
+</html>
