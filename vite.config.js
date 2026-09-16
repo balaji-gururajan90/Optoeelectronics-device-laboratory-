@@ -13,6 +13,7 @@ export default defineConfig({
         lab: resolve(__dirname, 'lab.html'),
         team: resolve(__dirname, 'team.html'),
         projects: resolve(__dirname, 'projects.html'),
+        sputterone: resolve(__dirname, 'sputterone.html'),
         partnerships: resolve(__dirname, 'partnerships.html'),
         news: resolve(__dirname, 'news.html'),
         contact: resolve(__dirname, 'contact.html'),
