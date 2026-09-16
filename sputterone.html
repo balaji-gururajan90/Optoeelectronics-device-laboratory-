@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SputterOne - A physics-informed interactive magnetron sputtering simulator developed at the Optoelectronics Device Laboratory, Yuan Ze University">
+    <meta name="keywords"
+        content="SputterOne, magnetron sputtering simulator, thin film growth, reactive sputtering, co-sputtering, Yuan Ze University">
+    <meta name="author" content="Dr. Balaji Gururajan">
+    <title>SputterOne | Optoelectronics Device Laboratory</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+
+<body class="sputterone-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container container-wide">
+            <div class="navbar-content">
+                <a href="index.html" class="navbar-logo">
+                    <img src="images/yzu-logo.png" alt="YZU Logo" class="navbar-logo-img">
+                    <div class="logo-text">
+                        <span>Opto</span>electronics Device Lab
+                    </div>
+                </a>
+
+                <ul class="navbar-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="lab.html">Laboratory</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="sputterone.html">SputterOne</a></li>
+                    <li><a href="partnerships.html">Partnerships</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <button class="navbar-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero sputterone-hero">
+        <canvas id="hero-background" class="hero-background"></canvas>
+        <div class="hero-overlay"></div>
+
+        <div class="container container-wide sputterone-hero-shell">
+            <div class="sputterone-hero-layout">
+                <div class="hero-content sputterone-hero-content">
+                    <div class="sputterone-wordmark" aria-label="SputterOne">
+                        <span>SPUTTER</span><span>ONE</span>
+                    </div>
+                    <span class="sputterone-kicker">Enabling Process Digital Twin</span>
+                    <h1 class="sputterone-headline">A Physics-Informed Interactive Magnetron Sputtering Simulator</h1>
+                    <p class="sputterone-hero-text">
+                        SputterOne is an interactive simulation platform for real-time exploration of magnetron
+                        sputtering process conditions. It integrates sputtering yield, gas-phase transport, reactive
+                        sputtering, co-sputtering, and thin-film growth mode models within a unified environment.
+                    </p>
+                    <p class="sputterone-credit">
+                        Developed by Dr. Balaji Gururajan at the Optoelectronics Device Laboratory, Yuan Ze University.
+                    </p>
+
+                    <div class="sputterone-actions">
+                        <a href="#sputterone-download" class="btn btn-primary">Download v1.0.1</a>
+                        <a href="#sputterone-citation" class="btn btn-secondary">View Citation</a>
+                    </div>
+                </div>
+
+                <div class="sputterone-hero-visual" aria-label="SputterOne visual preview">
+                    <img src="images/Sputterone-logo.png" alt="SputterOne logo" class="sputterone-visual-logo">
+                    <img src="images/graphical bottom.png" alt="SputterOne graphical interface preview"
+                        class="sputterone-visual-graphic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sputterone-capability-strip" aria-label="SputterOne capabilities">
+        <div class="sputterone-capability-item">
+            <strong>Yamamura</strong>
+            <span>Yield Model</span>
+        </div>
+        <div class="sputterone-capability-item">
+            <strong>Reduced-order</strong>
+            <span>Ion Transport</span>
+        </div>
+        <div class="sputterone-capability-item">
+            <strong>3 Guns</strong>
+            <span>Co-sputtering</span>
+        </div>
+        <div class="sputterone-capability-item">
+            <strong>9</strong>
+            <span>Target Materials</span>
+        </div>
+        <div class="sputterone-capability-item">
+            <strong>DC / RF</strong>
+            <span>Power Modes</span>
+        </div>
+        <div class="sputterone-capability-item">
+            <strong>Real-Time</strong>
+            <span>Physics Engine</span>
+        </div>
+    </section>
+
+    <!-- Who Can Use SputterOne -->
+    <section class="section sputterone-audience-section">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-label">Users</span>
+                <h2 class="section-title">Who Can Use SputterOne</h2>
+            </div>
+
+            <div class="sputterone-audience-grid">
+                <div class="card sputterone-audience-card" data-reveal="up">
+                    <h3 class="card-title">Researchers and Scientists</h3>
+                    <p class="card-description">
+                        Thin-film researchers working with magnetron sputtering systems can use SputterOne to build
+                        physical intuition about how process parameters interact before designing experimental runs.
+                        The simulator helps explore how working pressure affects transport regime, how target material
+                        influences sputtering yield, and how substrate choice affects growth mode — providing
+                        qualitative orientation that complements, but does not replace, experimental process
+                        development. It is particularly useful when exploring a new material or substrate combination
+                        for the first time.
+                    </p>
+                </div>
+
+                <div class="card sputterone-audience-card" data-reveal="up">
+                    <h3 class="card-title">Educators and Students</h3>
+                    <p class="card-description">
+                        SputterOne is well suited as a virtual teaching laboratory for courses covering thin-film
+                        deposition, physical vapour deposition, semiconductor processing, and materials science.
+                        Students can interactively explore sputtering yield trends, pressure-dependent transport
+                        regimes, reactive sputtering hysteresis, and co-sputtering composition without requiring access
+                        to physical sputtering equipment. The integrated tutorial and structured laboratory modules make
+                        it a practical companion to lecture-based teaching, helping students develop physical intuition
+                        before hands-on laboratory sessions.
+                    </p>
+                </div>
+
+                <div class="card sputterone-audience-card" data-reveal="up">
+                    <h3 class="card-title">Simulation and Computational Researchers</h3>
+                    <p class="card-description">
+                        Researchers working on reduced-order modelling, physics-informed simulation, and digital twin
+                        development for thin-film processes can use SputterOne as a reference implementation and
+                        starting point. The open-source MIT-licensed codebase demonstrates how Yamamura–Bohdansky yield,
+                        kinetic-theory transport, Berg reactive sputtering, and Bauer growth mode models can be
+                        integrated into a real-time browser-based environment. It is designed to evolve toward a process
+                        digital twin through iterative experimental calibration and model refinement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Form -->
+    <section class="section sputterone-download-section" id="sputterone-download">
+        <div class="container container-narrow">
+            <div class="section-header" data-animate>
+                <span class="section-label">Registration</span>
+                <h2 class="section-title">Download <span class="sputterone-inline-logo"><span>Sputter</span><span>One</span></span> v1.0.1</h2>
+                <p class="section-description">
+                    Please complete the form below to download the desktop application.
+                </p>
+            </div>
+
+            <form id="sputterone-download-form" class="card sputterone-form" action="https://script.google.com/macros/s/AKfycbyJld9IYxHBUP-2kdDy_qf4wmipoFM7Z23xMzZJVs1hMr-EER_8hha6emNXoX0CgPEy/exec"
+                method="POST" data-reveal="up">
+                <div class="sputterone-form-grid">
+                    <div class="form-group">
+                        <label class="form-label" for="full-name">Full Name</label>
+                        <input class="form-input" type="text" id="full-name" name="full_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email Address</label>
+                        <input class="form-input" type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="institution">Institution / Organisation</label>
+                        <input class="form-input" type="text" id="institution" name="institution" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="country">Country</label>
+                        <input class="form-input" type="text" id="country" name="country" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="purpose">Purpose</label>
+                    <select class="form-input" id="purpose" name="purpose" required>
+                        <option value="">Select purpose</option>
+                        <option value="Research">Research</option>
+                        <option value="Teaching">Teaching</option>
+                        <option value="Self-Learning">Self-Learning</option>
+                        <option value="Industry">Industry</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group sputterone-consent">
+                    <input type="checkbox" id="citation-agreement" name="citation_agreement" value="Agreed" required>
+                    <label for="citation-agreement">
+                        I agree to cite SputterOne if used in published work
+                    </label>
+                </div>
+
+                <input type="hidden" name="download_version" value="SputterOne v1.0.1">
+
+                <button type="submit" class="btn btn-primary sputterone-download-button">
+                    Download SputterOne v1.0.1 (.exe)
+                </button>
+
+                <p id="sputterone-thank-you" class="sputterone-thank-you" hidden>
+                    Thank you! Your download should start automatically. If not,
+                    <a href="https://drive.google.com/uc?export=download&id=1p4VI-XdNiUpvp1mPDBYvV6QkRw7JLp3G">
+                        click here
+                    </a>.
+                </p>
+            </form>
+
+            <div class="sputterone-platform-notice" data-reveal="up">
+                <div class="sputterone-platform-icon" aria-hidden="true">↓</div>
+                <div>
+                    <h3>Platform Availability</h3>
+                    <p>
+                        SputterOne desktop application is currently available for Windows OS (v1.0.1).
+                        macOS support is currently under development and will be available in a future release.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Citation -->
+    <section class="section section-sm sputterone-citation-section" id="sputterone-citation">
+        <div class="container container-narrow">
+            <div class="section-header" data-animate>
+                <span class="section-label">Citation</span>
+                <h2 class="section-title">How to Cite</h2>
+            </div>
+
+            <pre class="sputterone-citation" data-reveal="up"><code>Gururajan, B. (2025). SputterOne: A Physics-Informed Interactive Magnetron Sputtering Simulator Enabling Process Digital Twin. Yuan Ze University, Taiwan. https://balaji-gururajan90.github.io/SputterOne/</code></pre>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Optoelectronics Device Laboratory</h4>
+                    <p>Optoelectronics Device Laboratory</p>
+                    <p>Department of Electrical Engineering<br>Yuan Ze University<br>Taoyuan City, Taiwan</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Lab</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="lab.html">Laboratory Facilities</a></li>
+                        <li><a href="projects.html">Projects & Funding</a></li>
+                        <li><a href="sputterone.html">SputterOne Simulator</a></li>
+                        <li><a href="partnerships.html">Partnerships</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="https://scholar.google.com/citations?user=LDisxicAAAAJ&hl=en"
+                                target="_blank">Google Scholar</a></li>
+                        <li><a href="https://www.ei.yzu.edu.tw/teacher_list/all" target="_blank">University Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Optoelectronics Device Laboratory, Yuan Ze University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const sputterOneDownloadUrl = 'https://drive.google.com/uc?export=download&id=1p4VI-XdNiUpvp1mPDBYvV6QkRw7JLp3G';
+        const sputterOneForm = document.getElementById('sputterone-download-form');
+        const sputterOneThankYou = document.getElementById('sputterone-thank-you');
+
+        sputterOneForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            if (!sputterOneForm.checkValidity()) {
+                sputterOneForm.reportValidity();
+                return;
+            }
+
+            sputterOneThankYou.hidden = false;
+            window.location.href = sputterOneDownloadUrl;
+
+            try {
+                await fetch(sputterOneForm.action, {
+                    method: 'POST',
+                    body: new FormData(sputterOneForm),
+                    mode: 'no-cors'
+                });
+            } catch (error) {
+                console.warn('SputterOne registration form submission did not complete.', error);
+            }
+        });
+    </script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/background.js"></script>
+    <script type="module" src="js/animations.js"></script>
+</body>
+
+</html>
