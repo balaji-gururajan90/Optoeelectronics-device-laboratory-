@@ -3,10 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
@@ -16,9 +13,7 @@
         name="keywords"
         content="SputterOne, magnetron sputtering simulator, thin film growth, reactive sputtering, co-sputtering, Yuan Ze University">
 
-    <meta
-        name="author"
-        content="Dr. Balaji Gururajan">
+    <meta name="author" content="Dr. Balaji Gururajan">
 
     <title>
         SputterOne | Optoelectronics Device Laboratory
@@ -28,7 +23,9 @@
     <link rel="stylesheet" href="styles/components.css">
 
     <style>
-        /* User section */
+        /* ========================================
+           USERS
+        ======================================== */
 
         .sputterone-users-section {
             background: #0d111b;
@@ -62,6 +59,7 @@
             inset: 0;
             z-index: 0;
             pointer-events: none;
+            opacity: 0.48;
             background:
                 radial-gradient(
                     circle,
@@ -79,8 +77,7 @@
                     rgba(86, 214, 199, 0.07) 26%,
                     transparent 29%
                 );
-            opacity: 0.48;
-            animation: userParticles 16s linear infinite;
+            animation: sputteroneUserParticles 16s linear infinite;
         }
 
         .sputterone-user-card > * {
@@ -131,7 +128,23 @@
             box-shadow: 0 0 8px rgba(86, 214, 199, 0.65);
         }
 
-        @keyframes userParticles {
+        .sputterone-usage-note {
+            max-width: 900px;
+            margin: 28px auto 0;
+            padding: 18px 22px;
+            color: #cbd5e1;
+            background: rgba(15, 23, 42, 0.85);
+            border-left: 4px solid #56d6c7;
+            border-radius: 6px;
+            font-size: 14px;
+            line-height: 1.65;
+        }
+
+        .sputterone-usage-note strong {
+            color: #ffffff;
+        }
+
+        @keyframes sputteroneUserParticles {
             from {
                 background-position:
                     0 0,
@@ -147,20 +160,58 @@
             }
         }
 
-        /* Video section */
+        /* ========================================
+           VIDEO AND DOWNLOAD
+        ======================================== */
 
-        .sputterone-video-frame {
+        .sputterone-access-section {
+            scroll-margin-top: 100px;
+            background: #ffffff !important;
+        }
+
+        .sputterone-access-grid {
+            display: grid;
+            grid-template-columns:
+                minmax(0, 1fr)
+                minmax(420px, 1fr);
+            gap: 48px;
+            align-items: start;
+        }
+
+        .sputterone-access-column {
+            min-width: 0;
+        }
+
+        .sputterone-access-heading {
+            margin-bottom: 24px;
+        }
+
+        .sputterone-access-heading h2 {
+            margin: 8px 0 10px;
+            color: #0f172a;
+            font-size: 32px;
+            line-height: 1.2;
+            letter-spacing: 0;
+        }
+
+        .sputterone-access-heading p {
+            margin: 0;
+            color: #64748b;
+            line-height: 1.65;
+        }
+
+        .sputterone-demo-frame {
             position: relative;
             width: 100%;
             aspect-ratio: 16 / 9;
             overflow: hidden;
             background: #0d111b;
-            border: 1px solid rgba(86, 214, 199, 0.3);
+            border: 1px solid #dbe5eb;
             border-radius: 8px;
-            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+            box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
         }
 
-        .sputterone-video-frame iframe {
+        .sputterone-demo-frame iframe {
             position: absolute;
             inset: 0;
             width: 100%;
@@ -168,56 +219,54 @@
             border: 0;
         }
 
-        /* Download section */
-
-        #sputterone-download {
-            scroll-margin-top: 100px;
-            background: #f3f8fa;
+        .sputterone-youtube-link {
+            margin-top: 18px;
+            text-align: center;
         }
 
-        #sputterone-download .sputterone-form {
+        .sputterone-access-section .sputterone-form {
             display: block;
             width: 100%;
-            padding: 32px;
+            padding: 28px;
             color: #0f172a;
             background: #ffffff !important;
-            border: 1px solid #e2e8f0;
+            border: 1px solid #dbe5eb;
             border-radius: 8px;
-            box-shadow: 0 16px 35px rgba(15, 23, 42, 0.12);
+            box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
         }
 
-        #sputterone-download .form-label {
+        .sputterone-access-section .form-label {
             color: #0f172a;
         }
 
-        #sputterone-download .form-input {
+        .sputterone-access-section .form-input {
             width: 100%;
             color: #0f172a;
             background: #ffffff;
         }
 
-        #sputterone-download .sputterone-consent label {
-            color: #475569;
-        }
-
-        .sputterone-form-grid {
+        .sputterone-access-form-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 20px 24px;
+            gap: 18px 20px;
         }
 
-        .sputterone-country-field {
+        .sputterone-full-field {
             grid-column: 1 / -1;
+        }
+
+        .sputterone-access-section .sputterone-consent label {
+            color: #475569;
         }
 
         .sputterone-platform-box {
             display: flex;
             gap: 16px;
             align-items: flex-start;
-            margin-top: 24px;
+            margin-top: 32px;
             padding: 20px;
             color: #0f172a;
-            background: #dff5fa;
+            background: #e5f8fc;
             border-left: 4px solid #00bde7;
             border-radius: 8px;
         }
@@ -250,6 +299,10 @@
             line-height: 1.6;
         }
 
+        /* ========================================
+           RESPONSIVE
+        ======================================== */
+
         @media (max-width: 1024px) {
             .sputterone-users-grid {
                 grid-template-columns: 1fr;
@@ -260,19 +313,28 @@
             .sputterone-user-title {
                 min-height: auto;
             }
+
+            .sputterone-access-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
         }
 
-        @media (max-width: 700px) {
-            .sputterone-form-grid {
+        @media (max-width: 650px) {
+            .sputterone-access-form-grid {
                 grid-template-columns: 1fr;
             }
 
-            .sputterone-country-field {
+            .sputterone-full-field {
                 grid-column: auto;
             }
 
-            #sputterone-download .sputterone-form {
+            .sputterone-access-section .sputterone-form {
                 padding: 24px 20px;
+            }
+
+            .sputterone-access-heading h2 {
+                font-size: 27px;
             }
 
             .sputterone-platform-box {
@@ -326,16 +388,22 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="research.html">Research</a></li>
                     <li>
-                        <a href="publications.html">Publications</a>
+                        <a href="publications.html">
+                            Publications
+                        </a>
                     </li>
                     <li><a href="lab.html">Laboratory</a></li>
                     <li><a href="team.html">Team</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li>
-                        <a href="sputterone.html">SputterOne</a>
+                        <a href="sputterone.html">
+                            SputterOne
+                        </a>
                     </li>
                     <li>
-                        <a href="partnerships.html">Partnerships</a>
+                        <a href="partnerships.html">
+                            Partnerships
+                        </a>
                     </li>
                     <li><a href="news.html">News</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -386,8 +454,8 @@
                     </span>
 
                     <h1 class="sputterone-headline">
-                        A Physics-Informed Interactive
-                        Magnetron Sputtering Simulator
+                        A Physics-Informed Interactive Magnetron
+                        Sputtering Simulator
                     </h1>
 
                     <p class="sputterone-hero-text">
@@ -453,7 +521,7 @@
         </div>
     </section>
 
-    <!-- Capabilities -->
+    <!-- Capability Strip -->
     <section
         class="sputterone-capability-strip"
         aria-label="SputterOne capabilities">
@@ -619,20 +687,8 @@
 
             </div>
 
-            <div style="
-                max-width: 900px;
-                margin: 28px auto 0;
-                padding: 18px 22px;
-                color: #cbd5e1;
-                background: rgba(15, 23, 42, 0.85);
-                border-left: 4px solid #56d6c7;
-                border-radius: 6px;
-                font-size: 14px;
-                line-height: 1.65;
-            ">
-                <strong style="color: #ffffff;">
-                    Usage note:
-                </strong>
+            <div class="sputterone-usage-note">
+                <strong>Usage note:</strong>
 
                 SputterOne is intended as an educational and
                 preliminary exploration tool. Simulation results
@@ -643,305 +699,316 @@
         </div>
     </section>
 
-    <!-- Video Demo -->
-    <section class="section" id="sputterone-demo">
-        <div class="container container-narrow">
-
-            <div class="section-header" data-animate>
-                <span class="section-label">
-                    Video Demo
-                </span>
-
-                <h2 class="section-title">
-                    See SputterOne in Action
-                </h2>
-
-                <p class="section-description">
-                    Watch a demonstration of the SputterOne
-                    interface, simulation controls, and key
-                    features.
-                </p>
-            </div>
-
-            <div
-                class="sputterone-video-frame"
-                data-reveal="up">
-
-                <iframe
-                    src="https://www.youtube.com/embed/rGLu3ROJiAQ"
-                    title="SputterOne demonstration video"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-
-            </div>
-
-            <p style="
-                margin-top: 16px;
-                text-align: center;
-            ">
-                <a
-                    href="https://www.youtube.com/watch?v=rGLu3ROJiAQ"
-                    target="_blank"
-                    rel="noopener"
-                    class="btn btn-secondary">
-
-                    Watch on YouTube
-                </a>
-            </p>
-
-        </div>
-    </section>
-
-    <!-- Download Form -->
+    <!-- Video and Download -->
     <section
-        class="section sputterone-download-section"
+        class="section sputterone-access-section"
         id="sputterone-download">
 
-        <div class="container container-narrow">
+        <div class="container container-wide">
 
-            <div class="section-header" data-animate>
-                <span class="section-label">
-                    Registration
-                </span>
+            <div class="sputterone-access-grid">
 
-                <h2 class="section-title">
-                    Download
+                <!-- Video -->
+                <div class="sputterone-access-column">
 
-                    <span class="sputterone-inline-logo">
-                        <span>Sputter</span><span>One</span>
-                    </span>
+                    <div class="sputterone-access-heading">
+                        <span class="section-label">
+                            Video Demo
+                        </span>
 
-                    v1.0.1
-                </h2>
+                        <h2>
+                            See SputterOne in Action
+                        </h2>
 
-                <p class="section-description">
-                    Please complete the form below to download
-                    the desktop application.
-                </p>
-            </div>
-
-            <form
-                id="sputterone-download-form"
-                class="card sputterone-form"
-                action="https://script.google.com/macros/s/AKfycbyJld9IYxHBUP-2kdDy_qf4wmipoFM7Z23xMzZJVs1hMr-EER_8hha6emNXoX0CgPEy/exec"
-                method="POST"
-                data-reveal="up">
-
-                <div class="sputterone-form-grid">
-
-                    <!-- Full Name -->
-                    <div class="form-group">
-                        <label
-                            class="form-label"
-                            for="full-name">
-
-                            Full Name
-                        </label>
-
-                        <input
-                            class="form-input"
-                            type="text"
-                            id="full-name"
-                            name="full_name"
-                            required>
+                        <p>
+                            Watch a demonstration of the SputterOne
+                            interface, simulation controls, and key
+                            features.
+                        </p>
                     </div>
 
-                    <!-- Email -->
-                    <div class="form-group">
-                        <label
-                            class="form-label"
-                            for="email">
-
-                            Email Address
-                        </label>
-
-                        <input
-                            class="form-input"
-                            type="email"
-                            id="email"
-                            name="email"
-                            required>
-                    </div>
-
-                    <!-- Institution -->
-                    <div class="form-group">
-                        <label
-                            class="form-label"
-                            for="institution">
-
-                            Institution / Organisation
-                        </label>
-
-                        <input
-                            class="form-input"
-                            type="text"
-                            id="institution"
-                            name="institution"
-                            required>
-                    </div>
-
-                    <!-- Level -->
-                    <div class="form-group">
-                        <label
-                            class="form-label"
-                            for="user-level">
-
-                            Academic / Professional Level
-                        </label>
-
-                        <select
-                            class="form-input"
-                            id="user-level"
-                            name="level"
-                            required>
-
-                            <option
-                                value=""
-                                selected
-                                disabled>
-
-                                Select your level
-                            </option>
-
-                            <option value="Bachelor's Student">
-                                Bachelor's Student
-                            </option>
-
-                            <option value="Master's Student">
-                                Master's Student
-                            </option>
-
-                            <option value="PhD Candidate">
-                                PhD Candidate
-                            </option>
-
-                            <option value="Postdoctoral Researcher">
-                                Postdoctoral Researcher
-                            </option>
-
-                            <option value="Faculty">
-                                Faculty
-                            </option>
-
-                            <option value="Industry">
-                                Industry
-                            </option>
-
-                        </select>
-                    </div>
-
-                    <!-- Country -->
                     <div
-                        class="form-group
-                            sputterone-country-field">
+                        class="sputterone-demo-frame"
+                        data-reveal="up">
 
-                        <label
-                            class="form-label"
-                            for="country">
+                        <iframe
+                            src="https://www.youtube.com/embed/rGLu3ROJiAQ"
+                            title="SputterOne demonstration video"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
 
-                            Country
-                        </label>
+                    </div>
 
-                        <input
-                            class="form-input"
-                            type="text"
-                            id="country"
-                            name="country"
-                            required>
+                    <div class="sputterone-youtube-link">
+                        <a
+                            href="https://www.youtube.com/watch?v=rGLu3ROJiAQ"
+                            target="_blank"
+                            rel="noopener"
+                            class="btn btn-secondary">
+
+                            Watch on YouTube
+                        </a>
                     </div>
 
                 </div>
 
-                <!-- Purpose -->
-                <div class="form-group">
-                    <label
-                        class="form-label"
-                        for="purpose">
+                <!-- Download -->
+                <div class="sputterone-access-column">
 
-                        Purpose
-                    </label>
+                    <div class="sputterone-access-heading">
+                        <span class="section-label">
+                            Registration
+                        </span>
 
-                    <select
-                        class="form-input"
-                        id="purpose"
-                        name="purpose"
-                        required>
+                        <h2>
+                            Download
 
-                        <option value="">
-                            Select purpose
-                        </option>
+                            <span class="sputterone-inline-logo">
+                                <span>Sputter</span><span>One</span>
+                            </span>
 
-                        <option value="Research">
-                            Research
-                        </option>
+                            v1.0.1
+                        </h2>
 
-                        <option value="Teaching">
-                            Teaching
-                        </option>
+                        <p>
+                            Please complete the form below to
+                            download the Windows desktop
+                            application.
+                        </p>
+                    </div>
 
-                        <option value="Self-Learning">
-                            Self-Learning
-                        </option>
+                    <form
+                        id="sputterone-download-form"
+                        class="sputterone-form"
+                        action="https://script.google.com/macros/s/AKfycbyJld9IYxHBUP-2kdDy_qf4wmipoFM7Z23xMzZJVs1hMr-EER_8hha6emNXoX0CgPEy/exec"
+                        method="POST"
+                        data-reveal="up">
 
-                        <option value="Industry">
-                            Industry
-                        </option>
+                        <div class="sputterone-access-form-grid">
 
-                        <option value="Other">
-                            Other
-                        </option>
+                            <!-- Full Name -->
+                            <div class="form-group">
+                                <label
+                                    class="form-label"
+                                    for="full-name">
 
-                    </select>
+                                    Full Name
+                                </label>
+
+                                <input
+                                    class="form-input"
+                                    type="text"
+                                    id="full-name"
+                                    name="full_name"
+                                    required>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label
+                                    class="form-label"
+                                    for="email">
+
+                                    Email Address
+                                </label>
+
+                                <input
+                                    class="form-input"
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required>
+                            </div>
+
+                            <!-- Institution -->
+                            <div class="form-group">
+                                <label
+                                    class="form-label"
+                                    for="institution">
+
+                                    Institution / Organisation
+                                </label>
+
+                                <input
+                                    class="form-input"
+                                    type="text"
+                                    id="institution"
+                                    name="institution"
+                                    required>
+                            </div>
+
+                            <!-- Level -->
+                            <div class="form-group">
+                                <label
+                                    class="form-label"
+                                    for="user-level">
+
+                                    Academic / Professional Level
+                                </label>
+
+                                <select
+                                    class="form-input"
+                                    id="user-level"
+                                    name="level"
+                                    required>
+
+                                    <option
+                                        value=""
+                                        selected
+                                        disabled>
+
+                                        Select your level
+                                    </option>
+
+                                    <option value="Bachelor's Student">
+                                        Bachelor's Student
+                                    </option>
+
+                                    <option value="Master's Student">
+                                        Master's Student
+                                    </option>
+
+                                    <option value="PhD Candidate">
+                                        PhD Candidate
+                                    </option>
+
+                                    <option value="Postdoctoral Researcher">
+                                        Postdoctoral Researcher
+                                    </option>
+
+                                    <option value="Faculty">
+                                        Faculty
+                                    </option>
+
+                                    <option value="Industry">
+                                        Industry
+                                    </option>
+
+                                </select>
+                            </div>
+
+                            <!-- Country -->
+                            <div
+                                class="form-group
+                                    sputterone-full-field">
+
+                                <label
+                                    class="form-label"
+                                    for="country">
+
+                                    Country
+                                </label>
+
+                                <input
+                                    class="form-input"
+                                    type="text"
+                                    id="country"
+                                    name="country"
+                                    required>
+                            </div>
+
+                            <!-- Purpose -->
+                            <div
+                                class="form-group
+                                    sputterone-full-field">
+
+                                <label
+                                    class="form-label"
+                                    for="purpose">
+
+                                    Purpose
+                                </label>
+
+                                <select
+                                    class="form-input"
+                                    id="purpose"
+                                    name="purpose"
+                                    required>
+
+                                    <option
+                                        value=""
+                                        selected
+                                        disabled>
+
+                                        Select purpose
+                                    </option>
+
+                                    <option value="Research">
+                                        Research
+                                    </option>
+
+                                    <option value="Teaching">
+                                        Teaching
+                                    </option>
+
+                                    <option value="Self-Learning">
+                                        Self-Learning
+                                    </option>
+
+                                    <option value="Industry">
+                                        Industry
+                                    </option>
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <!-- Agreement -->
+                        <div class="form-group sputterone-consent">
+
+                            <input
+                                type="checkbox"
+                                id="citation-agreement"
+                                name="citation_agreement"
+                                value="Agreed"
+                                required>
+
+                            <label for="citation-agreement">
+                                I agree to cite SputterOne if used
+                                in published work
+                            </label>
+
+                        </div>
+
+                        <input
+                            type="hidden"
+                            name="download_version"
+                            value="SputterOne v1.0.1">
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary
+                                sputterone-download-button">
+
+                            Download SputterOne v1.0.1 (.exe)
+                        </button>
+
+                        <p
+                            id="sputterone-thank-you"
+                            class="sputterone-thank-you"
+                            hidden>
+
+                            Thank you! Your download should start
+                            automatically. If not,
+
+                            <a
+                                href="https://drive.google.com/uc?export=download&id=1p4VI-XdNiUpvp1mPDBYvV6QkRw7JLp3G">
+
+                                click here
+                            </a>.
+                        </p>
+
+                    </form>
+
                 </div>
-
-                <!-- Agreement -->
-                <div class="form-group sputterone-consent">
-
-                    <input
-                        type="checkbox"
-                        id="citation-agreement"
-                        name="citation_agreement"
-                        value="Agreed"
-                        required>
-
-                    <label for="citation-agreement">
-                        I agree to cite SputterOne if used in
-                        published work
-                    </label>
-
-                </div>
-
-                <input
-                    type="hidden"
-                    name="download_version"
-                    value="SputterOne v1.0.1">
-
-                <button
-                    type="submit"
-                    class="btn btn-primary
-                        sputterone-download-button">
-
-                    Download SputterOne v1.0.1 (.exe)
-                </button>
-
-                <p
-                    id="sputterone-thank-you"
-                    class="sputterone-thank-you"
-                    hidden>
-
-                    Thank you! Your download should start
-                    automatically. If not,
-
-                    <a
-                        href="https://drive.google.com/uc?export=download&id=1p4VI-XdNiUpvp1mPDBYvV6QkRw7JLp3G">
-
-                        click here
-                    </a>.
-                </p>
-
-            </form>
+            </div>
 
             <!-- Platform Availability -->
             <div
@@ -1144,6 +1211,7 @@
         </div>
     </footer>
 
+    <!-- Download Script -->
     <script>
         const sputterOneDownloadUrl =
             "https://drive.google.com/uc?export=download&id=1p4VI-XdNiUpvp1mPDBYvV6QkRw7JLp3G";
