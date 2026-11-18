@@ -474,132 +474,213 @@
     </div>
 </section>
     
-    <!-- Download Form -->
-    <section class="section sputterone-download-section" id="sputterone-download">
-        <div class="container container-narrow">
-            <div class="section-header" data-animate>
-                <span class="section-label">Registration</span>
-                <h2 class="section-title">Download <span class="sputterone-inline-logo"><span>Sputter</span><span>One</span></span> v1.0.1</h2>
-                <p class="section-description">
-                    Please complete the form below to download the desktop application.
-                </p>
-            </div>
+   <form
+    id="sputterone-download-form"
+    class="card sputterone-form"
+    action="https://script.google.com/macros/s/AKfycbyJld9IYxHBUP-2kdDy_qf4wmipoFM7Z23xMzZJVs1hMr-EER_8hha6emNXoX0CgPEy/exec"
+    method="POST"
+    data-reveal="up">
 
-            <form id="sputterone-download-form" class="card sputterone-form" action="https://script.google.com/macros/s/AKfycbyJld9IYxHBUP-2kdDy_qf4wmipoFM7Z23xMzZJVs1hMr-EER_8hha6emNXoX0CgPEy/exec"
-                method="POST" data-reveal="up">
-                <div class="sputterone-form-grid">
-                    <div class="form-group">
-                        <label class="form-label" for="full-name">Full Name</label>
-                        <input class="form-input" type="text" id="full-name" name="full_name" required>
-                    </div>
+    <div class="sputterone-form-grid">
 
-                    <div class="form-group">
-                        <label class="form-label" for="email">Email Address</label>
-                        <input class="form-input" type="email" id="email" name="email" required>
-                    </div>
+        <!-- Full Name -->
+        <div class="form-group">
+            <label
+                class="form-label"
+                for="full-name">
+                Full Name
+            </label>
 
-                    <div class="form-group">
-                        <label class="form-label" for="institution">Institution / Organisation</label>
-                        <input class="form-input" type="text" id="institution" name="institution" required>
-                    </div>
-
-                   
-       <div class="form-group">
-    <label
-        class="form-label"
-        for="user-level">
-        Academic / Professional Level
-    </label>
-
-    <select
-        class="form-input"
-        id="user-level"
-        name="level"
-        required>
-
-        <option value="" selected disabled>
-            Select your level
-        </option>
-
-        <option value="Bachelor's Student">
-            Bachelor's Student
-        </option>
-
-        <option value="Master's Student">
-            Master's Student
-        </option>
-
-        <option value="PhD Candidate">
-            PhD Candidate
-        </option>
-
-        <option value="Postdoctoral Researcher">
-            Postdoctoral Researcher
-        </option>
-
-        <option value="Faculty">
-            Faculty
-        </option>
-
-        <option value="Industry">
-            Industry
-        </option>
-
-    </select>
-</div>
-    </select>
-</div>
-                    <div class="form-group">
-                        <label class="form-label" for="country">Country</label>
-                        <input class="form-input" type="text" id="country" name="country" required>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" for="purpose">Purpose</label>
-                    <select class="form-input" id="purpose" name="purpose" required>
-                        <option value="">Select purpose</option>
-                        <option value="Research">Research</option>
-                        <option value="Teaching">Teaching</option>
-                        <option value="Self-Learning">Self-Learning</option>
-                        <option value="Industry">Industry</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-
-                <div class="form-group sputterone-consent">
-                    <input type="checkbox" id="citation-agreement" name="citation_agreement" value="Agreed" required>
-                    <label for="citation-agreement">
-                        I agree to cite SputterOne if used in published work
-                    </label>
-                </div>
-
-                <input type="hidden" name="download_version" value="SputterOne v1.0.1">
-
-                <button type="submit" class="btn btn-primary sputterone-download-button">
-                    Download SputterOne v1.0.1 (.exe)
-                </button>
-
-                <p id="sputterone-thank-you" class="sputterone-thank-you" hidden>
-                    Thank you! Your download should start automatically. If not,
-                    <a href="https://drive.google.com/uc?export=download&id=1p4VI-XdNiUpvp1mPDBYvV6QkRw7JLp3G">
-                        click here
-                    </a>.
-                </p>
-            </form>
-
-            <div class="sputterone-platform-notice" data-reveal="up">
-                <div class="sputterone-platform-icon" aria-hidden="true">↓</div>
-                <div>
-                    <h3>Platform Availability</h3>
-                    <p>
-                        SputterOne desktop application is currently available for Windows OS (v1.0.1).
-                        macOS support is currently under development and will be available in a future release.
-                    </p>
-                </div>
-            </div>
+            <input
+                class="form-input"
+                type="text"
+                id="full-name"
+                name="full_name"
+                required>
         </div>
-    </section>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label
+                class="form-label"
+                for="email">
+                Email Address
+            </label>
+
+            <input
+                class="form-input"
+                type="email"
+                id="email"
+                name="email"
+                required>
+        </div>
+
+        <!-- Institution -->
+        <div class="form-group">
+            <label
+                class="form-label"
+                for="institution">
+                Institution / Organisation
+            </label>
+
+            <input
+                class="form-input"
+                type="text"
+                id="institution"
+                name="institution"
+                required>
+        </div>
+
+        <!-- Academic Level -->
+        <div class="form-group">
+            <label
+                class="form-label"
+                for="user-level">
+                Academic / Professional Level
+            </label>
+
+            <select
+                class="form-input"
+                id="user-level"
+                name="level"
+                required>
+
+                <option value="" selected disabled>
+                    Select your level
+                </option>
+
+                <option value="Bachelor's Student">
+                    Bachelor's Student
+                </option>
+
+                <option value="Master's Student">
+                    Master's Student
+                </option>
+
+                <option value="PhD Candidate">
+                    PhD Candidate
+                </option>
+
+                <option value="Postdoctoral Researcher">
+                    Postdoctoral Researcher
+                </option>
+
+                <option value="Faculty">
+                    Faculty
+                </option>
+
+                <option value="Industry">
+                    Industry
+                </option>
+
+            </select>
+        </div>
+
+        <!-- Country -->
+        <div
+            class="form-group"
+            style="grid-column: 1 / -1;">
+
+            <label
+                class="form-label"
+                for="country">
+                Country
+            </label>
+
+            <input
+                class="form-input"
+                type="text"
+                id="country"
+                name="country"
+                required>
+        </div>
+
+    </div>
+
+    <!-- Purpose -->
+    <div class="form-group">
+        <label
+            class="form-label"
+            for="purpose">
+            Purpose
+        </label>
+
+        <select
+            class="form-input"
+            id="purpose"
+            name="purpose"
+            required>
+
+            <option value="">
+                Select purpose
+            </option>
+
+            <option value="Research">
+                Research
+            </option>
+
+            <option value="Teaching">
+                Teaching
+            </option>
+
+            <option value="Self-Learning">
+                Self-Learning
+            </option>
+
+            <option value="Industry">
+                Industry
+            </option>
+
+            <option value="Other">
+                Other
+            </option>
+
+        </select>
+    </div>
+
+    <!-- Citation Agreement -->
+    <div class="form-group sputterone-consent">
+        <input
+            type="checkbox"
+            id="citation-agreement"
+            name="citation_agreement"
+            value="Agreed"
+            required>
+
+        <label for="citation-agreement">
+            I agree to cite SputterOne if used in
+            published work
+        </label>
+    </div>
+
+    <input
+        type="hidden"
+        name="download_version"
+        value="SputterOne v1.0.1">
+
+    <!-- Download Button -->
+    <button
+        type="submit"
+        class="btn btn-primary sputterone-download-button">
+
+        Download SputterOne v1.0.1 (.exe)
+    </button>
+
+    <!-- Thank You Message -->
+    <p
+        id="sputterone-thank-you"
+        class="sputterone-thank-you"
+        hidden>
+
+        Thank you! Your download should start
+        automatically. If not,
+
+        <a href="https://drive.google.com/uc?export=download&id=1p4VI-XdNiUpvp1mPDBYvV6QkRw7JLp3G">
+            click here
+        </a>.
+    </p>
+
+</form>
 
 <!-- Citation -->
 <section class="section section-sm sputterone-citation-section"
